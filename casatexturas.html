@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3 - A-Frame con Texturas</title>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- ASSETS: Carga de texturas -->
+      <a-assets>
+        <img id="ladrillo" src="ladrillo.png">
+        <img id="cesped" src="cesped.png">
+      </a-assets>
+
+      <!-- Caja con textura de ladrillo -->
+      <a-box position="-2 1 -4" rotation="0 30 0" scale="1.5 1.5 1.5" src="#ladrillo"></a-box>
+      
+      <!-- Esfera con color -->
+      <a-sphere position="0 2.5 -3" radius="0.8" color="#4ECDC4"></a-sphere>
+      
+      <!-- Cilindro con color -->
+      <a-cylinder position="0 0.5 -5" radius="0.3" height="2" color="#FFE66D"></a-cylinder>
+      
+      <!-- Pared con textura de ladrillo -->
+      <a-box position="2 1 -4" width="2" height="2" depth="0.2" src="#ladrillo"></a-box>
+      
+      <!-- Plano del suelo con textura de césped -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" src="#cesped" repeat="3 3"></a-plane>
+      
+      <!-- Cielo azul claro -->
+      <a-sky color="#87CEEB"></a-sky>
+    </a-scene>
+  </body>
+</html>
+
